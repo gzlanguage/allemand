@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Heller Hintergrund */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Textfarbe */
+            font-family: 'Roboto', Arial, sans-serif; /* Ähnliche Schriftart verwenden */
+        }
+        header {
+            background-color: #ffffff; /* Weißer Hintergrund */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* Angepasste Schriftgröße */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* Blaue Farbe */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* Blauer Rand */
+            padding: 3px 6px; /* Reduziertes Padding */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .conditions-button {
+            color: #007BFF; /* Blaue Farbe */
+            font-size: 0.9em; /* Reduzierte Schriftgröße */
+            padding: 3px 6px; /* Reduziertes Padding */
+            border: 1px solid #007BFF; /* Blauer Rand */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Transparenter Hintergrund */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* Blauer Rand */
+            width: 100%;
+            margin-top: 0; /* Obere Marge entfernen */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* Textfarbe */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .content {
+            padding: 10px 20px; /* Oberes Padding reduziert */
+            font-size: 0.85em;
+        }
+        .content h2 {
+            font-size: 1.2em; /* Größe für Überschriften reduziert */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* Textfarbe */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="conditions-button">Datenschutz</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">Datenschutzrichtlinie</div>
+<div class="divider"></div>
+
+<div class="content">
+    <p><strong>Letzte Aktualisierung: 31/01/2024.</strong></p>
+    <p>Willkommen bei GZ, einer Webanwendung zur Generierung globaler demografischer Statistiken. Wir respektieren und schützen Ihre Privatsphäre. Diese Datenschutzrichtlinie beschreibt die Arten von Informationen, die wir sammeln, wie wir sie nutzen, wie wir sie schützen und Ihre Rechte als Benutzer.</p>
+
+    <h2>1. Gesammelte Informationen</h2>
+    <p><strong>a) Freiwillig bereitgestellte Informationen</strong></p>
+    <p>Wenn Sie unsere Anwendung nutzen, können Sie freiwillig die folgenden Informationen angeben:</p>
+    <ul>
+        <li>Geburtsdatum</li>
+        <li>Geburtsland</li>
+        <li>Geschlecht</li>
+    </ul>
+    
+    <p><strong>b) Keine automatische Erfassung</strong></p>
+    <p>Wir erfassen keine Daten automatisch (wie Cookies oder Browsing-Informationen).</p>
+
+    <h2>2. Verwendung der Informationen</h2>
+    <p>Wir verwenden die von Ihnen bereitgestellten Informationen ausschließlich, um:</p>
+    <ul>
+        <li>Anonyme Statistiken zu Geburten (nach Tag, Monat, Jahr, Land, Geschlecht, Alter usw.) zu analysieren und zu generieren.</li>
+        <li>Demografische Trends zu Bildungs- und historischen Zwecken zu identifizieren.</li>
+    </ul>
+    <p>Ihre Daten werden niemals für Marketing-, Werbe- oder andere Zwecke verwendet.</p>
+
+    <h2>3. Weitergabe von Informationen</h2>
+    <p>Wir geben Ihre Informationen nicht an Dritte weiter, es sei denn in den folgenden unbedingt notwendigen Fällen:</p>
+    <ul>
+        <li><strong>Dienstanbieter:</strong> Wir nutzen Google Cloud (Firebase) zum Hosting Ihrer Daten und PayPal für die Verwaltung von Spenden. Diese Partner verpflichten sich ebenfalls, strengen Datenschutzstandards zu folgen.</li>
+        <li><strong>Rechtliche Verpflichtungen:</strong> Wenn es gesetzlich erforderlich ist, können wir verpflichtet sein, Ihre Daten zur Erfüllung rechtlicher Verpflichtungen offenzulegen.</li>
+    </ul>
+    <p>Außerhalb dieser Fälle werden Ihre Daten weder verkauft, vermietet noch mit irgendjemandem geteilt.</p>
+
+    <h2>4. Datenspeicherung und Sicherheit</h2>
+    <p>Ihre Daten sind durch strenge Maßnahmen geschützt, einschließlich:</p>
+    <ul>
+        <li><strong>Verschlüsselung:</strong> Alle Kommunikationen zwischen Ihrem Gerät und unseren Servern sind über SSL/TLS-Protokolle gesichert.</li>
+        <li><strong>Sichere Speicherung:</strong> Ihre Daten werden auf den sicheren Servern von Google Cloud gespeichert, die sich in den Vereinigten Staaten befinden und den internationalen Datenschutzstandards entsprechen.</li>
+    </ul>
+    <p>Wir stellen außerdem sicher, dass:</p>
+    <ul>
+        <li>Übermittelte Daten sofort aggregiert und anonymisiert werden.</li>
+        <li>Keine Informationen auf einen einzelnen Benutzer zurückverfolgt werden können.</li>
+    </ul>
+
+    <h2>5. Datenlöschung</h2>
+    <p>Sie haben die volle Kontrolle über Ihre Daten:</p>
+    <ul>
+        <li>Nach der Übermittlung erscheint ein Zurücksetzen-Symbol, mit dem Sie Ihre Daten jederzeit löschen können, solange Ihre Sitzung aktiv bleibt.</li>
+        <li>Sobald Ihre Sitzung geschlossen oder abgelaufen ist, werden Ihre Daten unwiderruflich anonymisiert und können nicht mehr gelöscht werden.</li>
+    </ul>
+    <p>Wir bewahren diese aggregierten Daten für langfristige Forschung und Analyse auf. Im Falle eines größeren Problems oder auf Ihre Anfrage verpflichten wir uns, alle gesammelten Daten zu löschen.</p>
+
+    <h2>6. Cookies und ähnliche Technologien</h2>
+    <p>Wir verwenden keine Cookies oder Tracking-Technologien.</p>
+
+    <h2>7. Internationale Datenübertragungen</h2>
+    <p>Ihre Daten können in die Vereinigten Staaten übertragen und dort gespeichert werden, wo sich unsere Server befinden. Wir stellen sicher, dass alle Daten in Übereinstimmung mit internationalen Datenschutzgesetzen und mit den gleichen Sicherheitsniveaus verarbeitet werden.</p>
+
+    <h2>8. Aufbewahrungsfrist</h2>
+    <p>Wir bewahren anonymisierte Daten unbegrenzt auf, um deren Nützlichkeit für zukünftige demografische Analysen zu gewährleisten. Allerdings werden keine identifizierbaren Daten über die aktive Sitzung des Benutzers hinaus aufbewahrt.</p>
+
+    <h2>9. Änderungen dieser Richtlinie</h2>
+    <p>Wir können diese Datenschutzrichtlinie aktualisieren, um Änderungen in unseren Praktiken oder geltenden Gesetzen widerzuspiegeln. Alle wesentlichen Änderungen werden über unsere Anwendung oder per E-Mail kommuniziert.</p>
+
+    <h2>10. Kontakt</h2>
+    <p>Für Fragen oder Bedenken zu dieser Datenschutzrichtlinie können Sie uns kontaktieren:</p>
+    <p>E-Mail: admin@g-z.online</p>
+</div>
+
+<footer>
+    <p>©️ 2025 <span translate="no">GZ</span></p>
+</footer>
+
+</body>
+</html>

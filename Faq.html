@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Heller Hintergrund */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Textfarbe */
+            font-family: 'Roboto', Arial, sans-serif; /* Ähnliche Schriftart verwenden */
+        }
+        header {
+            background-color: #ffffff; /* Weißer Hintergrund */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* Angepasste Schriftgröße */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* Blaue Farbe */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* Blauer Rand */
+            padding: 3px 6px; /* Reduzierte Polsterung */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .faq-button {
+            color: #007BFF; /* Blaue Farbe */
+            font-size: 0.9em; /* Reduzierte Schriftgröße */
+            padding: 3px 6px; /* Reduzierte Polsterung */
+            border: 1px solid #007BFF; /* Blauer Rand */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Transparenter Hintergrund */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* Blauer Rand */
+            width: 100%;
+            margin-top: 0; /* Obere Marge entfernen */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* Textfarbe */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .faq-content {
+            padding: 10px 20px; /* Reduzierte obere Polsterung */
+            font-size: 0.85em;
+        }
+        .faq-content h2 {
+            font-size: 1.2em; /* Reduzierte Größe für FAQ-Überschriften */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* Textfarbe */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="faq-button">FAQ</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">FAQ - Häufig Gestellte Fragen</div>
+<div class="divider"></div>
+
+<div class="faq-content">
+    <h2>1. Was ist GZ und wofür wird es verwendet?</h2>
+    <p>G-Z ist eine vollständig kostenlose Webanwendung, die es Benutzern ermöglicht, ihr Geburtsdatum, Geburtsland und Geschlecht ohne vorherige Registrierung einzureichen. Sie ist darauf ausgelegt, globale und nationale Statistiken zu Geburten zu generieren, einschließlich:</p>
+    <ul>
+        <li>Geburten nach Tag, Monat und Jahr.</li>
+        <li>Verteilung nach Land, Geschlecht und Alter.</li>
+    </ul>
+    <p>Das Hauptziel ist es, zugängliche demografische Daten bereitzustellen, um ein besseres Verständnis der globalen Bevölkerungstrends zu ermöglichen.</p>
+
+    <h2>2. Sind meine Daten anonym?</h2>
+    <p>Ja, Ihre Daten sind vollständig anonym. Wir haben G-Z so gestaltet, dass:</p>
+    <ul>
+        <li>Keine Daten auf einen einzelnen Benutzer zurückverfolgt werden können.</li>
+        <li>Wir keine Informationen sammeln, die identifizieren, wer was eingereicht hat. Seien Sie versichert, Ihre Identität ist geschützt und Ihre Daten werden sofort aggregiert.</li>
+    </ul>
+
+    <h2>3. Wie werde ich wissen, ob meine Daten eingereicht wurden?</h2>
+    <p>Sobald Ihre Daten eingereicht sind:</p>
+    <ul>
+        <li>Der Einreichungsbutton ändert die Farbe: orange während der Einreichung und grün, wenn die Einreichung erfolgreich war.</li>
+        <li>Der Text des Buttons ändert sich von "Einreichen" zu "Eingereicht".</li>
+    </ul>
+    <p>Diese Indikatoren bestätigen, dass Ihre Daten berücksichtigt wurden.</p>
+
+    <h2>4. Kann ich meine Einreichungen ändern oder löschen?</h2>
+    <p>Ja, Sie haben die Möglichkeit, Ihre Daten sofort nach der Einreichung zu löschen. So geht's:</p>
+    <ul>
+        <li>Ein Rücksetzsymbol erscheint nach der Einreichung.</li>
+        <li>Durch Klicken auf dieses Symbol werden Ihre Daten vollständig von unseren Servern entfernt.</li>
+    </ul>
+    <p>Wenn Sie jedoch die Webanwendung schließen oder die Sitzung abläuft, werden die Daten unwiderruflich anonymisiert und können nicht mehr geändert oder gelöscht werden. Bitte konsultieren Sie unsere <a href="Confidentialité.html">Datenschutzrichtlinie '5'</a> für weitere Informationen.</p>
+
+    <h2>5. Was passiert, wenn ich falsche Informationen angebe?</h2>
+    <p>Wir ermutigen Sie, genaue und überprüfte Informationen einzureichen, um die Qualität der Statistiken zu gewährleisten. Wenn Sie nach der Einreichung einen Fehler bemerken:</p>
+    <ul>
+        <li>Verwenden Sie das Rücksetzsymbol, um Ihre Daten zu löschen.</li>
+        <li>Sie können dann die korrigierten Informationen einreichen.</li>
+    </ul>
+
+    <h2>6. Warum GZ unterstützen?</h2>
+    <p>Obwohl GZ kostenlos ist, benötigen wir Ihre Unterstützung, um:</p>
+    <ul>
+        <li>Server- und Infrastrukturkosten zu decken.</li>
+        <li>Weitere tiefere Analysen und zukünftige Projekte zu finanzieren, die allen zugutekommen.</li>
+        <li>Die kontinuierliche Verbesserung der Anwendung und ihrer Funktionen zu ermöglichen.</li>
+    </ul>
+    <p>Sie können unsere Mission über PayPal oder andere Beitragsmöglichkeiten unterstützen.</p>
+
+    <h2>7. Warum GZ in sozialen Medien folgen?</h2>
+    <p>Indem Sie uns in sozialen Medien folgen, können Sie:</p>
+    <ul>
+        <li>Über neue Analysen und demografische Trends informiert bleiben.</li>
+        <li>Regelmäßige Updates zu unseren globalen Statistiken entdecken.</li>
+        <li>An Bildungsdiskussionen über globale Demografie teilnehmen.</li>
+    </ul>
+    <p>Außerdem teilen wir faszinierende Informationen aus unseren Statistiken und halten Sie über unsere neuen Projekte informiert.</p>
+</div>
+
+<footer>
+    <p>©️ 2025 GZ</p>
+</footer>
+</body>
+</html>

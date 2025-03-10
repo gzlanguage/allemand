@@ -26,12 +26,12 @@
 
         h1 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-family: 'Billabong', cursive;
             color: #007BFF;
             border: 2px solid #007BFF;
             padding: 3px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         .copyright-icon {
@@ -44,7 +44,7 @@
             height: 1px;
             background-color: #007BFF;
             width: 100%;
-            margin: 2px 0;
+            margin: 1.6px 0;
         }
 
         .button-container {
@@ -60,8 +60,8 @@
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 8px 15px;
+            border-radius: 8px;
+            padding: 6px 13px;
             margin: 0 5px;
             font-size: 0.8em;
             cursor: pointer;
@@ -78,7 +78,7 @@
         .share-button {
             background-color: #ffffff;
             border: 1px solid #007BFF;
-            border-radius: 10px;
+            border-radius: 9px;
             cursor: pointer;
             margin-left: 10px;
             padding: 5px;
@@ -93,10 +93,10 @@
 
         .category-select, .country-select {
             width: 100%;
-            padding: 8px;
-            margin: 5px 0;
+            padding: 5px;
+            margin: 4px 0;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             background: white;
             border-top: 3px solid #007BFF;
         }
@@ -104,7 +104,7 @@
         .dashboard {
             max-width: 800px;
             margin: auto;
-            padding: 20px;
+            padding: 8px;
         }
 
         .grid {
@@ -112,14 +112,14 @@
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 10px;
             overflow: auto;
-            max-height: 400px;
+            max-height: 700px;
             overflow-y: scroll;
         }
 
         .card {
             background: white;
-            padding: 8px;
-            border-radius: 8px;
+            padding: 6px;
+            border-radius: 15px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
             color: inherit;
@@ -133,13 +133,13 @@
             background: #e9f5ff;
         }
 
-        .title { color: #666; font-size: 0.8rem; margin-bottom: 5px; }
+        .title { color: #666; font-size: 0.8rem; margin-bottom: 9px; }
         .value { font-size: 1rem; font-weight: bold; color: #007BFF; }
 
         @media (max-width: 500px) {
             .grid { grid-template-columns: repeat(2, 1fr); }
-            .title { font-size: 0.7rem; }
-            .value { font-size: 0.9rem; }
+            .title { font-size: 0.6rem; }
+            .value { font-size: 0.8rem; }
         }
 
         .modal {
@@ -156,22 +156,22 @@
 
         .modal-content {
             background-color: #fff;
-            margin: 33% auto; 
-            padding: 15px; /* Reduziertes Padding */
-            border: 1px solid #007BFF; 
-            border-radius: 10px; /* Reduzierter Randradius */
+            margin: 34% auto; 
+            padding: 14px;
+            border: 2px solid #007BFF; 
+            border-radius: 40px; 
             width: 80%; 
-            max-width: 290px; /* Reduzierte Breite */
+            max-width: 290px; 
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
         .close {
             color: red; 
-            font-size: 20px; /* Reduzierte Schriftgröße */
+            font-size: 20px; 
             font-weight: bold;
             display: block; 
             text-align: center; 
-            margin-bottom: 10px; /* Reduzierte Margin */
+            margin-bottom: 10px; 
             cursor: pointer;
         }
 
@@ -181,19 +181,19 @@
 
         .modal p {
             color: #333; 
-            font-size: 0.9em; /* Reduzierte Schriftgröße */
-            text-align: center; /* Zentrierter Text */
+            font-size: 0.8em; 
+            text-align: center; 
         }
 
         .support-button {
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 8px 12px; /* Reduziertes Padding */
+            border-radius: 10px;
+            padding: 8px 12px; 
             cursor: pointer;
-            font-size: 0.9em; /* Reduzierte Schriftgröße */
-            margin-top: 10px; /* Reduzierte Margin */
+            font-size: 0.8em; 
+            margin-top: 10px; 
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -210,15 +210,15 @@
         import { getAuth } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
         const firebaseConfig = {
-            apiKey: "AIzaSyBwfLgPM_tz2aFW33ck5iF9SPSxpPpYSHU",
-            authDomain: "genz-9f218.firebaseapp.com",
-            databaseURL: "https://genz-9f218-default-rtdb.firebaseio.com",
-            projectId: "genz-9f218",
-            storageBucket: "genz-9f218.appspot.com",
-            messagingSenderId: "286958713700",
-            appId: "1:286958713700:web:29d878befaf6dd8c049871",
-            measurementId: "G-P0W7NB022J"
-        };
+  apiKey: "AIzaSyCrPKQOqw4zciASa_5PbI_etfkvrBaDPDI",
+  authDomain: "genz-abb36.firebaseapp.com",
+  databaseURL: "https://genz-abb36-default-rtdb.firebaseio.com",
+  projectId: "genz-abb36",
+  storageBucket: "genz-abb36.firebasestorage.app",
+  messagingSenderId: "405021535683",
+  appId: "1:405021535683:web:ee5a28fde27f5558046176",
+  measurementId: "G-XZNQND2J00"
+};
 
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
@@ -246,7 +246,7 @@
                 countries.add(userData.country); // Sicherstellen, dass 'country' eine Eigenschaft von userData ist
             });
 
-            // Füllt den Länderwähler
+            // Den Länderwähler füllen
             countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country;
@@ -292,11 +292,11 @@
                     } else if (selectedCategory === 'yearly') {
                         key = new Date(userData.date).getFullYear();
                     } else if (selectedCategory === 'gender') {
-                        key = userData.gender; // Für die Kategorie 'gender'
+                        key = userData.gender; // Für die Kategorie 'Geschlecht'
                     } else if (selectedCategory === 'age') {
                         key = calculateAge(userData.date); // Alter berechnen
                     } else if (selectedCategory === 'population') {
-                        key = userData.country; // Für die Bevölkerung, das Land verwenden
+                        key = userData.country; // Für Bevölkerung, Land verwenden
                     }
 
                     counts[key] = (counts[key] || 0) + 1;
@@ -334,7 +334,7 @@
             categorySelect.addEventListener('change', debounce(updateCards, 300));
             fetchData(); // Daten beim Start laden
 
-            // Unterstützungsmodal öffnen
+            // Support-Modal öffnen
             document.getElementById('supportBtn').onclick = function() {
                 document.getElementById('supportModal').style.display = 'block';
             };
@@ -351,7 +351,7 @@
                 };
             });
 
-            // Modal schließen, indem man außerhalb klickt
+            // Modal schließen durch Klicken außerhalb
             window.onclick = function(event) {
                 const modals = document.querySelectorAll('.modal');
                 modals.forEach(modal => {
@@ -365,6 +365,24 @@
             document.getElementById('paypalBtn').onclick = function() {
                 window.location.href = 'https://www.paypal.com/ncp/payment/QN7HEGCSRYJKA';
             };
+
+            // Farbe des Support-Buttons jede Sekunde ändern
+            const supportButton = document.getElementById('supportBtn');
+            let isGreenSupport = false;
+
+            setInterval(() => {
+                isGreenSupport = !isGreenSupport; // Farbe umschalten
+                supportButton.style.backgroundColor = isGreenSupport ? 'green' : '#007BFF'; // Farbe ändern
+            }, 700);
+
+            // Farbe des PayPal-Buttons jede Sekunde ändern
+            const paypalButton = document.getElementById('paypalBtn');
+            let isGreenPaypal = false;
+
+            setInterval(() => {
+                isGreenPaypal = !isGreenPaypal; // Farbe umschalten
+                paypalButton.style.backgroundColor = isGreenPaypal ? 'green' : '#007BFF'; // Farbe ändern
+            }, 10000);
         });
     </script>
 </head>
@@ -372,7 +390,7 @@
 
 <header>
     <a href="index.html" style="text-decoration: none;">
-        <h1 translate="no">GZ</h1>
+        <h1 translate="no">G-Z</h1>
     </a>
     <div class="copyright-icon">©️</div>
     <a href="Partage.html">
@@ -388,7 +406,7 @@
     <button id="faqBtn" class="button" aria-label="FAQ">
         <i class="fas fa-question-circle" style="margin-right: 2px;"></i> FAQ
     </button>
-    <button id="supportBtn" class="button" aria-label="Unterstützung" translate="no">
+    <button id="supportBtn" class="button" aria-label="Support" translate="no">
         <i class="fas fa-hand-holding-heart" style="margin-right: 5px;"></i> Unterstützung
     </button>
 </div>
@@ -396,18 +414,18 @@
 <div class="divider"></div>
 
 <div class="dashboard">
-    <select class="country-select" aria-label="Ein Land auswählen" id="countrySelect">
+    <select class="country-select" aria-label="Wählen Sie ein Land" id="countrySelect">
         <option value="">Alle Länder</option>
-        <!-- Länderauswahl wird dynamisch hinzugefügt -->
+        <!-- Länderoptionen werden dynamisch hinzugefügt -->
     </select>
 
-    <select class="category-select" aria-label="Eine Kategorie auswählen" id="categorySelect">
-        <option value="daily">Geburten pro Tag</option>
-        <option value="monthly">Geburten pro Monat</option>
-        <option value="yearly">Geburten pro Jahr</option>
+    <select class="category-select" aria-label="Wählen Sie eine Kategorie" id="categorySelect">
+        <option value="daily">Geburten nach Tag</option>
+        <option value="monthly">Geburten nach Monat</option>
+        <option value="yearly">Geburten nach Jahr</option>
         <option value="gender">Geschlecht</option>
         <option value="age">Alter</option>
-        <option value="population">Bevölkerung</option> <!-- Bevölkerungsoption hinzugefügt -->
+        <option value="population">Bevölkerung</option>
     </select>
 
     <div class="grid" id="grid">
@@ -415,12 +433,12 @@
     </div>
 </div>
 
-<!-- Unterstützungsmodal -->
+<!-- Support-Modal -->
 <div id="supportModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Danke, dass Sie G-Z unterstützen! Jede Unterstützung zählt. Mit Ihrer Hilfe können wir dieses spannende Projekt weiterentwickeln, innovative Analysen erstellen und kostenlose Statistiken einem globalen Publikum zur Verfügung stellen.</p>
-        <button id="paypalBtn" class="support-button">Jetzt unterstützen</button>
+        <p>Vielen Dank für Ihre Unterstützung von G-Z! Jede Unterstützung zählt. Mit Ihrer Hilfe können wir dieses aufregende Projekt weiterentwickeln, innovative Analysen erstellen und kostenlose Statistiken für ein globales Publikum bereitstellen.</p>
+        <button id="paypalBtn" class="support-button">Ich unterstütze jetzt</button>
     </div>
 </div>
 
@@ -428,8 +446,9 @@
 <div id="faqModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        Die Statistiken werden automatisch mit jedem Eintrag in den Tabellen aktualisiert.
+        Die Statistiken aktualisieren sich automatisch mit jeder Einreichung in den Tabellen.
     </div>
 </div>
+
 </body>
 </html>

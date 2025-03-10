@@ -24,14 +24,14 @@
             font-size: 1.8em;
             font-family: 'Billabong', cursive;
             color: #007BFF; /* Blaue Farbe */
-            border: 1.5px solid #007BFF; /* Blauer Rahmen */
-            padding: 5px 10px;
+            border: 1.5px solid #007BFF; /* Blaue Umrandung */
+            padding: 4px;
             display: inline-block;
-            border-radius: 10px; /* Abgerundete Ecken */
+            border-radius: 12px; /* Abgerundete Ecken */
         }
         .divider {
             height: 1px;
-            background-color: #007BFF; /* Rahmenfarbe */
+            background-color: #007BFF; /* Umrandungsfarbe */
             width: 100%;
             margin: 5px 0;
         }
@@ -55,15 +55,15 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 15px; /* Abstand zwischen den Icons */
+            gap: 15px; /* Abstand zwischen Symbolen */
             margin-top: 20px;
         }
         .icon {
             font-size: 30px; 
             color: #007BFF; /* Blaue Farbe */
             transition: color 0.3s;
-            border: 1px solid #007BFF; /* Blauer Rahmen */
-            border-radius: 3px;
+            border: 1px solid #007BFF; /* Blaue Umrandung */
+            border-radius: 10px;
             padding: 8px; 
             background-color: rgba(0, 119, 190, 0.1); /* Heller Hintergrund */
             display: inline-block;
@@ -82,7 +82,7 @@
             content: '';
             flex: 1;
             height: 1px;
-            background-color: #007BFF; /* Blauer Rahmen */
+            background-color: #007BFF; /* Blaue Umrandung */
         }
         .or-divider::before {
             margin-right: 10px;
@@ -95,9 +95,10 @@
         }
         .copy-button {
             margin-top: 10px;
-            padding: 10px 20px;
-            border: 1px solid #007BFF; /* Blauer Rahmen */
-            background-color: transparent;
+            padding: 10px 17px;
+            border: 1px solid #007BFF; /* Blaue Umrandung */
+            border-radius: 13px;
+            background-color: rgba(0, 119, 190, 0.1); /* Heller Hintergrund */
             color: #007BFF; /* Blaue Farbe */
             cursor: pointer;
             font-size: 16px;
@@ -111,12 +112,7 @@
             margin-top: 10px;
             color: #007BFF; /* Blaue Farbe */
         }
-        .copyright {
-            margin-top: 40px;
-            color: darkgray;
-            font-size: 0.8em;
-            text-align: center;
-        }
+        
     </style>
 </head>
 <body>
@@ -129,18 +125,18 @@
     <div class="divider"></div>
 
     <div class="content">
-        <h1>Teile GZ</h1>
+        <h1>Teile G-Z</h1>
         <div class="short-divider"></div>
-        <p class="social-message">Lass uns herausfinden, wer wir sind und wie wir zur Welt gehören! Neben Unterhaltung lass uns mehr über unsere Generation lernen:</p>
+        <p class="social-message">Lass uns herausfinden, wer wir sind und wie wir zur Welt gehören! Neben Unterhaltung lass uns mehr über unsere Generationen lernen:</p>
 
         <div class="social-icons">
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?text=Tritt%20G-Z%20bei%20!%20Lass%20uns%20die%20faszinierenden%20Geheimnisse%20unserer%20Generation%20entdecken,%20mit%20aufregenden%20Entdeckungen%20und%20unterhaltsamen%20Momenten.%20Sei%20Teil%20dieses%20einzigartigen%20Abenteuers!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+            <a href="https://api.whatsapp.com/send?text=Schließe%20dich%20G-Z%20an!%20Gemeinsam%20lassen%20wir%20uns%20von%20den%20faszinierenden%20Geheimnissen%20unserer%20Generation%20überraschen,%20zwischen%20spannenden%20Entdeckungen%20und%20Unterhaltungs-Momenten.%20Sei%20Teil%20dieses%20einzigartigen%20Abenteuers!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=Tritt%20G-Z%20bei%20!%20Lass%20uns%20die%20faszinierenden%20Geheimnisse%20unserer%20Generation%20entdecken,%20mit%20aufregenden%20Entdeckungen%20und%20unterhaltsamen%20Momenten.%20Sei%20Teil%20dieses%20einzigartigen%20Abenteuers!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=Schließe%20dich%20G-Z%20an!%20Gemeinsam%20lassen%20wir%20uns%20von%20den%20faszinierenden%20Geheimnissen%20unserer%20Generation%20überraschen,%20zwischen%20spannenden%20Entdeckungen%20und%20Unterhaltungs-Momenten.%20Sei%20Teil%20dieses%20einzigartigen%20Abenteuers!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
                 <i class="fab fa-telegram"></i>
             </a>
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
@@ -155,17 +151,14 @@
             <span style="color: #007BFF;">Oder</span> <!-- Blaue Farbe -->
         </div>
 
-        <p class="copy-message">Kopiere den Link zum Teilen:</p>
+        <p class="copy-message">Kopiere den Teilen-Link:</p>
         <button class="copy-button" onclick="copyLink()">Kopieren</button>
         <p class="copy-status" id="copyStatus"></p>
     </div>
 
-    <div class="copyright">
-        &copy; 2025 <span translate="no">G-Z</span>. Alle Rechte vorbehalten.
-    </div>
-
+    
     <script>
-        const shareText = "Tritt G-Z bei! Lass uns die faszinierenden Geheimnisse unserer Generation entdecken, mit aufregenden Entdeckungen und unterhaltsamen Momenten. Sei Teil dieses einzigartigen Abenteuers! 🌟";
+        const shareText = "Schließe dich G-Z an! Gemeinsam lassen wir uns von den faszinierenden Geheimnissen unserer Generation überraschen, zwischen spannenden Entdeckungen und Unterhaltungs-Momenten. Sei Teil dieses einzigartigen Abenteuers! 🌟";
         const shareLink = "https://www.g-z.online";
 
         function copyLink() {
